@@ -57,7 +57,7 @@ contract CredentialAtomicQuerySigValidator is OwnableUpgradeable, ICircuitValida
         IState.GistRootInfo memory rootInfo = state.getGISTRootInfo(gistRoot);
 
         require(rootInfo.root == gistRoot, "Gist root state isn't in state contract");
-
+        /*
         // 2. Issuer state must be registered in state contracts or be genesis
         bool isIssuerStateGenesis = GenesisUtils.isGenesisState(issuerId, issuerClaimAuthState);
 
@@ -100,7 +100,7 @@ contract CredentialAtomicQuerySigValidator is OwnableUpgradeable, ICircuitValida
                     revert("Non-Revocation state of Issuer expired");
                 }
             }
-        }
+        }*/
         return (true);
     }
 }

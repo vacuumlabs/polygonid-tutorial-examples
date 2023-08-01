@@ -30,8 +30,6 @@ contract ZKPVerifier is IZKPVerifier, Ownable {
         ); // validator exists
         require(requestQueries[requestId].queryHash != 0, "query is not set for this request id"); // query exists
 
-        _beforeProofSubmit(requestId, inputs, requestValidators[requestId]);
-
         require(
             requestValidators[requestId].verify(
                 inputs,
@@ -45,7 +43,6 @@ contract ZKPVerifier is IZKPVerifier, Ownable {
 
         proofs[msg.sender][requestId] = true; // user provided a valid proof for request
 
-        _afterProofSubmit(requestId, inputs, requestValidators[requestId]);
         return true;
     }
 
