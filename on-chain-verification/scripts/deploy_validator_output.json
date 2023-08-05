@@ -1,0 +1,17 @@
+{
+ "info": [
+  {
+   "verifierAddress": "0x357Bb671fEb5577d310410eab93291B4De04a834",
+   "validatorContractName": "CredentialAtomicQueryMTPValidator",
+   "validator": "0x63d37A297c9E1b07E8438C4da0aA050B7e29D9aE",
+   "verifier": "0x357Bb671fEb5577d310410eab93291B4De04a834"
+  },
+  {
+   "verifierAddress": "0xf635aCA4E8B5268aA9Bf8E226907C27383fC9686",
+   "validatorContractName": "CredentialAtomicQuerySigValidator",
+   "validator": "0x55E82C15123C637a6Bbe0EFE1515f7087faC0545",
+   "verifier": "0xf635aCA4E8B5268aA9Bf8E226907C27383fC9686"
+  }
+ ],
+ "network": "mumbai"
+}
